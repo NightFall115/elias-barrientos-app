@@ -8,6 +8,7 @@ const Tabla_Libro = ({ libros, onEliminarLibro, onEditarLibro }) => {
         <tr>
           <th>Título</th>
           <th>Autor</th>
+          <th>Año</th>
           <th>Acciones</th>
         </tr>
       </thead>
@@ -16,6 +17,7 @@ const Tabla_Libro = ({ libros, onEliminarLibro, onEditarLibro }) => {
           <tr key={libro.id}>
             <td>{libro.titulo}</td>
             <td>{libro.autor}</td>
+            <td>{libro.año}</td>
             <td>
               <button className="btn btn-primary me-2" onClick={() => onEditarLibro(libro.id)}>Editar</button>
               <button className="btn btn-danger" onClick={() => onEliminarLibro(libro.id)}>Eliminar</button>

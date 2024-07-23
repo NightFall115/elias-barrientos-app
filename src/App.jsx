@@ -31,6 +31,7 @@ const App = () => {
 
   return (
     <div className="container mt-4">
+      <h1>Gestión de Libros</h1>
       <Libro_form 
         onAgregarLibro={agregarLibro} 
         onEditarLibro={editarLibro} 
