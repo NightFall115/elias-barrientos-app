@@ -46,7 +46,7 @@ const Libro_form = ({ onAgregarLibro, onEditarLibro, Editar_Modo, Libro_actu }) 
       </div>
       <div>
         <label>Año</label>
-        <input type="text" className="form-control" value={año} onChange={(e) => set_año(e.target.value)} />
+        <input type="number" className="form-control" value={año} onChange={(e) => set_año(e.target.value)} />
       </div>
       <button type="submit" className={`btn ${Editar_Modo ? 'btn-primary' : 'btn-success'}`}>
         {Editar_Modo ? 'Actualizar Libro' : 'Agregar Libro'}
